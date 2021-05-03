@@ -1,0 +1,3 @@
+<!--$(this).removeClass("fas fa-heart heart_blue");-->
+<!--$(this).addClass("fas fa-heart heart_red");-->
+$(".favorite-btn-<%= @book.id%>").html("<%= j(render 'favorites/favorite-btn', book: @book) %>");
