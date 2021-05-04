@@ -5,9 +5,9 @@ class WelcomeMailer < ApplicationMailer
   #
   #   en.welcome_mailer.send_when_signup.subject
   #
-  def send_when_signup(email,name)
-    @name = user.name
+  def send_when_signup(email,user)
+    @user = user
 
-    mail to: email, subject: "Registration Complete! Thanks for Joing"
+    mail to: email, subject: "登録完了しました。"
   end
 end
